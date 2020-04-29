@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uae">درهم الإمارات العربية المتحدة</string>
+    <string name="bahraini">دينار بحريني</string>
+    <string name="egypt">الجنيه المصري</string>
+    <string name="kuwait">دينار كويتي</string>
+    <string name="omani">بلدي الريال</string>
+    <string name="qatar">الريال القطري</string>
+    <string name="saudi">ريال سعودي</string>
+    <string name="us">دولار الولايات المتحدة</string>
+    <string name="hear_about">كيف سمعت عن بيبي سوق ؟</string>
+    <string name="ram">حرم</string>
+    <string name="fb">فيس بوك</string>
+    <string name="google">جوجل</string>
+    <string name="insta">انستغرام</string>
+    <string name="bb">Baby Bazaar</string>
+    <string name="tok">تايم اوت كيدز</string>
+    <string name="frnds">استعلام من أصدقاء/ أقرباء</string>
+    <string name="other">أخرى</string>
+
+
+</resources>

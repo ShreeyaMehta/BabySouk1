@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Select_Language">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:id="@+id/ham_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/menu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_marginStart="50dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="left"
+        android:layout_below="@+id/linear">
+
+    <RelativeLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Your Region"
+            android:layout_marginTop="100dp"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/region"
+            android:background="@drawable/corner"
+            android:layout_marginTop="20sp"/>
+
+        <TextView
+            android:id="@+id/lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Select Preferred Language"/>
+
+        <RelativeLayout
+            android:id="@+id/languages"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lang">
+
+            <Button
+                android:id="@+id/english"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="English"
+                android:background="@drawable/english_language"/>
+
+            <Button
+                android:id="@+id/arabic"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="عربى"
+                android:textSize="18sp"
+                android:layout_toEndOf="@id/english"
+                android:background="@drawable/arabic_language"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/get_started"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="70dp"
+            android:layout_below="@id/languages"
+            android:layout_centerHorizontal="true"
+            android:text="GET STARTED"
+            android:textColor="@color/white"
+            android:background="@drawable/pink_btn"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_gravity="left" >
+
+    </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+</RelativeLayout>

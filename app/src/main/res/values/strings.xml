@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Baby Souk</string>
+    <string name="uae">United Arab Emirates Dirham</string>
+    <string name="bahraini">Bahraini Dinar</string>
+    <string name="egypt">Egyptian Pound</string>
+    <string name="kuwait">Kuwaiti Dinar</string>
+    <string name="omani">Omani Rial</string>
+    <string name="qatar">Qatari Rial</string>
+    <string name="saudi">Saudi Riyal</string>
+    <string name="us">United States Dollar</string>
+    <string name="hear_about">How did you hear about us?</string>
+    <string name="ram">7RAM</string>
+    <string name="fb">Facebook</string>
+    <string name="google">Google</string>
+    <string name="insta">Instagram</string>
+    <string name="bb">Baby Bazaar</string>
+    <string name="tok">Time Out Kids</string>
+    <string name="frnds">Referral from friends</string>
+    <string name="other">Others</string>
+    
+    <string-array name="cat0">
+        <item> Baby Essentials</item>
+        <item> Stroller Souk</item>
+        <item> Car Seats</item>
+    </string-array>
+
+    <string-array name="baby_essentials">
+        <item>Baby Essentials</item>
+        <item> Sleep Essentials</item>
+        <item>Carriers and Wrap</item>
+        <item>Decor</item>
+        <item>Clothing and Accessories</item>
+        <item>Active and Safe Parenting</item>
+        <item>Twins</item>
+        <item>Organic and Natural Essentials</item>
+        <item>All About Mum</item>
+    </string-array>
+
+    <string-array name="expand_baby_essentials">
+        <item>Diaper / Change Bags</item>
+        <item>Diapers and Wipes</item>
+        <item>Pacifiers and Teething Toys</item>
+        <item>Skincare</item>
+    </string-array>
+
+    <string-array name="sleep">
+        <item>show</item>
+        <item>show</item>
+        <item>show</item>
+        <item>show</item>
+    </string-array>
+
+    <string-array name="stroller_souk">
+        <item>Best Sellers Stroller Souk</item>
+        <item> Strollers</item>
+        <item>Stroller Accessories</item>
+        <item>Stroller Repair Services</item>
+        <item>Stroller Cleaning Services</item>
+    </string-array>
+
+    
+   <!-- <string name="stroller">Stroller Souk</string>
+
+    <string name="best"> Best Sellers Stroller Souk</string>
+    <string name="strollers">Strollers</string>
+    <string name="accessories">Stroller Accessories</string>
+    <string name="repair">Stroller Repair Services </string>
+    <string name="cleaning">Stroller Cleaning Services</string>
+    
+    <string name="car_seats">Car Seats</string>
+
+    <string name="babycar_seats">Baby Car Seats</string>
+    <string name="todlercar_seats">Toddler Car Seats</string>
+    <string name="childcar_seats">Child Car Seats</string>
+    <string name="rearcar_seats">Rear-Facing and Forward-Facing Car Seats</string>
+    <string name="covercar_seats">Cover and Accessories</string>
+    <string name="baseunitscar_seats">Base Units</string>
+-->
+
+</resources>

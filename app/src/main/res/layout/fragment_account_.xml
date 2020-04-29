@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Account"
+        android:gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_account"
+        android:layout_margin="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/name_of_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Shreeya Mehta"
+                android:textColor="@color/pink"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/email_of_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="shreeya@vfgf.dfdg"
+                android:layout_below="@id/name_of_user"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+
+            <View
+                android:id="@+id/view_line1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lightgrey"
+                android:layout_below="@id/email_of_user"
+                android:layout_marginTop="30dp"/>
+            
+            <LinearLayout
+                android:id="@+id/account_profile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/view_line1">
+                
+                <ImageView
+                    android:id="@+id/account_profile_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"/>
+                
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="My Profile"/>
+
+                <ImageView
+                    android:id="@+id/next_profile_page"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="center"/>
+
+                
+            </LinearLayout>
+            <View
+                android:id="@+id/view_line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lightgrey"
+                android:layout_below="@id/account_profile"/>
+
+
+            <LinearLayout
+                android:id="@+id/account_my_orders"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/view_line2">
+
+                <ImageView
+                    android:id="@+id/account_order_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="My Orders"/>
+
+                <ImageView
+                    android:id="@+id/next_order_page"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view_line3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lightgrey"
+                android:layout_below="@id/account_my_orders"/>
+
+            <LinearLayout
+                android:id="@+id/account_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/view_line3">
+
+                <ImageView
+                    android:id="@+id/account_address_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="Address Book"/>
+
+                <ImageView
+                    android:id="@+id/next_address_page"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view_line4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lightgrey"
+                android:layout_below="@id/account_address"/>
+
+            <LinearLayout
+                android:id="@+id/account_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/view_line4">
+
+                <ImageView
+                    android:id="@+id/account_contact_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="Contact Us"/>
+
+                <ImageView
+                    android:id="@+id/next_contact_page"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view_line5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lightgrey"
+                android:layout_below="@id/account_contact_us"/>
+
+            <LinearLayout
+                android:id="@+id/account_rate_us"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/view_line5">
+
+                <ImageView
+                    android:id="@+id/account_rate_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="Rate Our App"/>
+
+                <ImageView
+                    android:id="@+id/next_rate_page"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view_line6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lightgrey"
+                android:layout_below="@id/account_rate_us"/>
+
+            <LinearLayout
+                android:id="@+id/account_settings"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/view_line6">
+
+                <ImageView
+                    android:id="@+id/account_settings_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="Settings"/>
+
+                <ImageView
+                    android:id="@+id/next_settings_page"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view_line7"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/lightgrey"
+                android:layout_below="@id/account_settings"/>
+
+
+            <Button
+                android:id="@+id/sign_out"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/pink_btn"
+                android:text="SIGN OUT"
+                android:textColor="@color/white"
+                android:layout_below="@id/view_line7"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/sign_out"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

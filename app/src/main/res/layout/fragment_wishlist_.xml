@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Wishlist_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_wishlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wishlist"
+        android:gravity="center"
+        android:layout_marginTop="25dp"/>
+
+   <!-- <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wishlist_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_wishlist"
+        android:layout_marginTop="25dp"/>-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_dummy"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_wishlist"
+        android:layout_marginTop="15dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/image_card"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/image_border">
+
+                <ImageView
+                    android:id="@+id/product_image_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/product_heart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/product_stars_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate stars"
+                android:layout_below="@id/image_card"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/product_Category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_stars_rate"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Beach wear(category)" />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swimsuit"
+                android:layout_below="@id/product_Category"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_below="@id/product_name"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_dummy1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_wishlist"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/card_view_dummy"
+        android:layout_marginStart="15dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/image_card1"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/image_border">
+
+                <ImageView
+                    android:id="@+id/product_image_rv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/product_heart1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/product_stars_rate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate stars"
+                android:layout_below="@id/image_card1"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/product_Category1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_stars_rate1"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Beach wear(category)" />
+
+            <TextView
+                android:id="@+id/product_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swimsuit"
+                android:layout_below="@id/product_Category1"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/product_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_below="@id/product_name1"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_dummy2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view_dummy"
+        android:layout_marginTop="15dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/image_card2"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/image_border">
+
+                <ImageView
+                    android:id="@+id/product_image_rv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/product_heart2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/product_stars_rate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate stars"
+                android:layout_below="@id/image_card2"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/product_Category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_stars_rate2"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Beach wear(category)" />
+
+            <TextView
+                android:id="@+id/product_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swimsuit"
+                android:layout_below="@id/product_Category2"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/product_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_below="@id/product_name2"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_dummy3"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view_dummy"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/card_view_dummy"
+        android:layout_marginStart="15dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/image_card3"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/image_border">
+
+                <ImageView
+                    android:id="@+id/product_image_rv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/product_heart3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/product_stars_rate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate stars"
+                android:layout_below="@id/image_card3"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/product_Category3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_stars_rate3"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Beach wear(category)" />
+
+            <TextView
+                android:id="@+id/product_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swimsuit"
+                android:layout_below="@id/product_Category3"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/product_price3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_below="@id/product_name3"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>
